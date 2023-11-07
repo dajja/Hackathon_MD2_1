@@ -4,11 +4,12 @@ export default function Box(props) {
     const { textValue } = props;
     const [letter, setLetter] = useState(0);
     const [word, setWord] = useState(0);
+    const [para,setPara] = useState(0);
     useEffect(() => {
-        console.log(textValue.length);
         setLetter(textValue.match(/[a-zA-Z]/g)?.length || 0);
         if (textValue != "") {
             setWord(textValue.trim().split(/\s+/).length);
+            setPara(textValue.match(/\n/g)?.length || 0)
         } else {
             setWord(0);
         }
@@ -35,7 +36,7 @@ export default function Box(props) {
                         <i className="fa-solid fa-paragraph"></i>
                         <div>Paragraph</div>
                     </div>
-                    <div className='box-sm2'>0</div>
+                    <div className='box-sm2'>{para}</div>
                 </div>
             </div>
         </>
