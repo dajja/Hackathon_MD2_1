@@ -1,0 +1,19 @@
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+.box-small {
+    padding: 10px 45px 30px 45px;
+    background-color: rgb(164, 248, 164);
+    border-radius: 10px;
+}
+.box-sm1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.box-sm2 {
+    text-align: center;
+    margin-top: 10px;
+}

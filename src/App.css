@@ -1,0 +1,21 @@
+.app {
+  background-color: rgb(201, 201, 201);
+  height: max-content;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+.app-con-1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.app-con-2,.app-con-3 {
+  margin-bottom: 30px;
+}
